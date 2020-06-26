@@ -38,7 +38,7 @@ export function fetchPost(id) {
 }
 
 export function deletePost(id, callback) {
-  const request = axios
+  axios
     .delete(`${ROOT_URL}/posts/${id}`)
     .then(() => callback())
 
